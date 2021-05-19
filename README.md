@@ -1,6 +1,7 @@
 # TourmalineBot Rewrite
 TourmalineBot but better :)
 by `dhoru#7700`
+*if you think you can steal my token then you cant because this contains an old one*
 # Install
 ```git
 git clone https://github.com/Dhoru/TourmalineBot_Rewrite
