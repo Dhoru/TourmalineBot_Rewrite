@@ -1,13 +1,20 @@
 import wikipedia
 import discord
 from discord.ext import commands
-from token import token as token
+import os
+from dotenv import load_dotenv
+from dotenv import load_dotenv
+from os import getenv
+
+load_dotenv()
+
+token = getenv("TOKEN")
 
 description = "TourmalineBot - Made by dhoru#7700"
 bot = commands.Bot(command_prefix="t.", description=description, intents=discord.Intents.all())
 
-bot.load_extension("cogs/somecommands")
-bot.load_extension("cogs/listener")
+bot.load_extension("cogs.somecommands")
+bot.load_extension("cogs.listener")
 #bot.load_extension("urban")
 
 @bot.event
