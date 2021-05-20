@@ -1,12 +1,13 @@
 import wikipedia
 import discord
 from discord.ext import commands
+from token import token as token
 
 description = "TourmalineBot - Made by dhoru#7700"
 bot = commands.Bot(command_prefix="t.", description=description, intents=discord.Intents.all())
 
-bot.load_extension("somecommands")
-bot.load_extension("listener")
+bot.load_extension("cogs/somecommands")
+bot.load_extension("cogs/listener")
 #bot.load_extension("urban")
 
 @bot.event
@@ -20,5 +21,5 @@ async def on_ready():
     print(bot.user.id)
     print('------')
 
-bot.run("NzQ5OTEwOTQ0OTUxNDM1MjY0.X0y2_Q.kl45EFJcFkwywpjkPDpcMci45Ys")
+bot.run(token)
 

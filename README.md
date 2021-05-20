@@ -5,6 +5,11 @@ by `dhoru#7700`
 ```git
 git clone https://github.com/Dhoru/TourmalineBot_Rewrite
 ```
+# Note
+You need to create a file called `token.py` which contains
+```py
+token = your_token_here #replace your_token_here with your actual discord token
+```
 # License
 ```
 MIT License
