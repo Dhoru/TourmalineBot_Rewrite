@@ -6,9 +6,9 @@ by `dhoru#7700`
 git clone https://github.com/Dhoru/TourmalineBot_Rewrite
 ```
 # Note
-You need to create a file called `token.py` which contains
+You need to create a file called `.env` which contains
 ```py
-token = your_token_here #replace your_token_here with your actual discord token
+TOKEN=your_token_here #replace your_token_here with your actual discord token
 ```
 # License
 ```

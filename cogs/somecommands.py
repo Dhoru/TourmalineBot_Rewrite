@@ -6,7 +6,6 @@ bot = commands.Bot(command_prefix="t.")
 
 
 class SomeCommands(commands.Cog):
-    """A couple of simple commands. """
 
     def __init__(self, bot: commands.Bot):
         self.bot = bot
@@ -25,6 +24,18 @@ class SomeCommands(commands.Cog):
         embed=discord.Embed(title="Invite Link", url="https://discord.com/oauth2/authorize?client_id=749910944951435264&permissions=4294967295&scope=bot")
         embed.colour = 0xFFFFFF 
         
+        await ctx.send(embed=embed)
+
+    @commands.command(name="snipe")
+    async def snipe(self, ctx: commands.Context):
+        if not self.last_msg: 
+            await ctx.send("There is no message to snipe!")
+            return
+
+        author = self.last_msg.author
+        content = self.last_msg.content
+
+        embed = discord.Embed(title=f"Message from {author}", description=content)
         await ctx.send(embed=embed)
 
 def setup(bot: commands.bot):
