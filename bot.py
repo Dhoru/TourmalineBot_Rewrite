@@ -5,6 +5,8 @@ import os
 from dotenv import load_dotenv
 from dotenv import load_dotenv
 from os import getenv
+import traceback
+import sys
 
 load_dotenv()
 
@@ -15,6 +17,7 @@ bot = commands.Bot(command_prefix="t.", description=description, intents=discord
 
 bot.load_extension("cogs.somecommands")
 bot.load_extension("cogs.listener")
+bot.load_extension("cogs.ownerCommands")
 #bot.load_extension("urban")
 
 @bot.event
