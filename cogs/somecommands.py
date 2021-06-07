@@ -3,7 +3,6 @@ import wikipedia
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix="t.")
-DiscordComponents(bot)
 
 class SomeCommands(commands.Cog):
 	def __init__(self, bot: commands.Bot):
