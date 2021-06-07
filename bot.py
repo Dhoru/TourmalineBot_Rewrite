@@ -14,6 +14,7 @@ token = getenv("TOKEN")
 
 description = "TourmalineBot - Made by dhoru#7700"
 bot = commands.Bot(command_prefix="t.", description=description, intents=discord.Intents.all())
+DiscordComponents(bot)
 
 bot.load_extension("cogs.somecommands")
 bot.load_extension("cogs.listener")

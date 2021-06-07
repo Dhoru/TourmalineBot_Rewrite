@@ -25,5 +25,10 @@ class ownerCommands(commands.Cog):
 		ctx.bot.reload_extension(args)
 		await ctx.message.add_reaction("<:greentick:719778001373364304>")
 
+	@commands.command(name="setstatus", help="Changes the status of the bot", Hidden=True)
+	@commands.is_owner()
+	async def setstatus(self, ctx, *, text: str):
+		await self.bot.change_presence(activity=discord.Game(name=text))
+
 def setup(bot: commands.bot):
 	bot.add_cog(ownerCommands(bot))

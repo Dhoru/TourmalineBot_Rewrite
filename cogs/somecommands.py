@@ -3,21 +3,15 @@ import wikipedia
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix="t.")
-
+DiscordComponents(bot)
 
 class SomeCommands(commands.Cog):
-
 	def __init__(self, bot: commands.Bot):
 		self.bot = bot
 
 	@commands.command(name="ping", help="Show bot latency")
 	async def ping(self, ctx):
 		await ctx.send(f"Pong! {round(self.bot.latency * 1000)}ms")
-
-	@commands.command(name="setstatus", help="Changes the status of the bot", Hidden=True)
-	@commands.is_owner()
-	async def setstatus(self, ctx, *, text: str):
-		await self.bot.change_presence(activity=discord.Game(name=text))
 
 	@commands.command(name="invite", help="Sends the bot invite link")
 	async def invite(ctx):
@@ -38,22 +32,20 @@ class SomeCommands(commands.Cog):
 		embed = discord.Embed(title=f"Message from {author}", description=content)
 		await ctx.send(embed=embed)
 
-	@commands.command(name="dontpingme")
-	async def dont_ping_me(self, ctx: commands.Context):
-		am = discord.AllowedMentions(
-			users=False,
-		)
-		await ctx.send(f"Hello, {ctx.author.mention}", allowed_mentions=am)
-
 	@commands.command(name='say')
 	async def say(self, ctx: commands.Context, *, args):
 		am = discord.AllowedMentions(
-			users=False,  # Whether to ping individual user @mentions
-			everyone=False,  # Whether to ping @everyone or @here mentions
-			roles=False,  # Whether to ping role @mentions
-			replied_user=False,  # Whether to ping on replies to messages
+			users=False,
+			everyone=False,
+			roles=False,
+			replied_user=False,
 			)
 		await ctx.send(args, allowed_mentions=am)
+
+	@commands.command(name='entode', help='english to german dictionary')
+	async def entode(self, ctx: commands.Context, args):
+		resultthing = args
+		await ctx.send("https://www.dict.cc/?s={resultthing}")
 
 def setup(bot: commands.bot):
 	bot.add_cog(SomeCommands(bot))
