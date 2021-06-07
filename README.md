@@ -10,7 +10,7 @@ You need to create a file called `.env` which contains
 ```sh
 TOKEN=YOUR_TOKEN_HERE #replace your_token_here with your actual discord token
 ```
-# License
+# License (MIT)
 ```
 MIT License
 
