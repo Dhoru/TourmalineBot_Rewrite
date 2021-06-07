@@ -18,7 +18,6 @@ bot = commands.Bot(command_prefix="t.", description=description, intents=discord
 bot.load_extension("cogs.somecommands")
 bot.load_extension("cogs.listener")
 bot.load_extension("cogs.ownerCommands")
-#bot.load_extension("urban")
 
 @bot.event
 async def on_ready():
