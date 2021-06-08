@@ -6,10 +6,12 @@ by `dhoru#7700`
 git clone https://github.com/Dhoru/TourmalineBot_Rewrite
 ```
 # Note
-You need to create a file called `.env` which contains
+You need to edit the `example.env` file:
 ```sh
 TOKEN=YOUR_TOKEN_HERE #replace your_token_here with your actual discord token
 ```
+And also rename it from `example.env` to just `.env`
+
 # License (MIT)
 ```
 MIT License
