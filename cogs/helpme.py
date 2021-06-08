@@ -22,6 +22,7 @@ class helpme(commands.Cog):
 				`main`
 				`owner` (<@!473870575081881600> only)
 				`listeners`
+				`misc`
 				'''
 				, color=0xff0000)
 			embed.set_footer(text="TourmalineBot - Made by dhoru#7700")
@@ -34,9 +35,6 @@ class helpme(commands.Cog):
 
 				`t.ayat <surah number> <ayat number>`
 					> Get an ayat from quran
-
-				`t.say <args>`
-					> Make the bot say something you want
 
 				`t.snipe`
 					> Sends the last sent message in a channel (coming soon)
@@ -64,6 +62,18 @@ class helpme(commands.Cog):
 
 				`t.reload`
 					> Reload a cog
+				""")
+			embed.set_footer(text="TourmalineBot - Made by dhoru#7700")
+			embed.colour = 0xFF0000
+			await ctx.send(embed=embed)
+
+		elif args == 'misc':
+			embed=discord.Embed(title="Miscellaneous Commands", description="""
+				`t.catfact`
+					> Random cat fact
+
+				`t.say`
+					> Make the bot say something
 				""")
 			embed.set_footer(text="TourmalineBot - Made by dhoru#7700")
 			embed.colour = 0xFF0000

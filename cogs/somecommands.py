@@ -2,6 +2,8 @@ import discord
 import wikipedia
 from discord.ext import commands
 import pyquran as q
+import random
+from catfacts import catfacts
 
 bot = commands.Bot(command_prefix="t.")
 
@@ -41,6 +43,10 @@ class SomeCommands(commands.Cog):
 			replied_user=False,
 			)
 		await ctx.send(args, allowed_mentions=am)
+
+	@commands.command(name='catfact')
+	async def catfact(self, ctx: commands.Context):
+		await ctx.send(random.choice(catfacts))
 
 	@commands.command(name='ayat', help='get an ayat')
 	async def ayat(self, ctx: commands.Context, sn: int, an: int):
