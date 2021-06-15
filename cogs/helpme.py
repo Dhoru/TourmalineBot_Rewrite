@@ -23,6 +23,8 @@ class helpme(commands.Cog):
 				`owner` (<@!473870575081881600> only)
 				`listeners`
 				`misc`
+
+				
 				'''
 				, color=0xff0000)
 			embed.set_footer(text="TourmalineBot - Made by dhoru#7700")
