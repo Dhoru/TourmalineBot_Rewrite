@@ -16,7 +16,7 @@ class SomeCommands(commands.Cog):
 		await ctx.send(f"Pong! {round(self.bot.latency * 1000)}ms")
 
 	@commands.command(name="invite", help="Sends the bot invite link")
-	async def invite(ctx):
+	async def invite(self, ctx: commands.Context):
 		embed=discord.Embed(title="Invite Link", url="https://discord.com/oauth2/authorize?client_id=749910944951435264&permissions=4294967295&scope=bot")
 		embed.colour = 0xFFFFFF 
 		
