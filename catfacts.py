@@ -14,7 +14,7 @@ catfacts = [
 			"The term “puss” is the root of the principal word for “cat” in the Romanian term pisica and the root of secondary words in Lithuanian (puz) and Low German puus. Some scholars suggest that “puss” could be imitative of the hissing sound used to get a cat’s attention. As a slang word for the female pudenda, it could be associated with the connotation of a cat being soft, warm, and fuzzy.",
 			"Approximately 40,000 people are bitten by cats in the U.S. annually.",
 			"Cats are North America’s most popular pets: there are 73 million cats compared to 63 million dogs. Over 30% of households in North America own a cat.",
-			"According to Hebrew legend, Noah prayed to God for help protecting all the food he stored on the ark from being eaten by rats. In reply, God made the lion sneeze, and out popped a cat.",
+			"The prophet Nuh prayed to God for help protecting all the food he stored on the ark from being eaten by rats. In reply, God created the cats to eat the rats",
 			"A cat’s hearing is better than a dog’s. And a cat can hear high-frequency sounds up to two octaves higher than a human.",
 			"A cat can travel at a top speed of approximately 31 mph (49 km) over a short distance.",
 			"A cat rubs against people not only to be affectionate but also to mark out its territory with scent glands around its face. The tail area and paws also carry the cat’s scent.",
