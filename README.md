@@ -1,6 +1,8 @@
 # TourmalineBot Rewrite
 TourmalineBot but better :)
 by `dhoru#7700`
+
+Written in [**pycord**](https://github.com/Pycord-Development/pycord)
 # Install
 ```git
 git clone https://github.com/Dhoru/TourmalineBot_Rewrite
