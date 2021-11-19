@@ -38,9 +38,6 @@ class helpme(commands.Cog):
 				`t.ayat <surah number> <ayat number>`
 					> Get an ayat from quran
 
-				`t.snipe`
-					> Sends the last sent message in a channel (coming soon)
-
 				`t.invite`
 					> Sends bot invite link
 
@@ -84,6 +81,8 @@ class helpme(commands.Cog):
 		elif args == 'listeners':
 			embed=discord.Embed(title="Listeners", description="""
 				*These are ARs (Autoresponders) and not commands*
+
+				**__BETA__**
 
 				`test`
 					> Does a test
