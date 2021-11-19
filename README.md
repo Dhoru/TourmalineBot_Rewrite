@@ -1,6 +1,6 @@
 # TourmalineBot Rewrite
 TourmalineBot but better :)
-by `dhoru#7700`
+by `dhoru#7700` contributor: `buksmort33`
 
 Written in [**pycord**](https://github.com/Pycord-Development/pycord)
 # Install
