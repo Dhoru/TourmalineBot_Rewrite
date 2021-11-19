@@ -21,9 +21,6 @@ bot.load_extension("cogs.listener")
 bot.load_extension("cogs.ownerCommands")
 bot.load_extension("cogs.helpme")
 
-
-#BIG CHANGE
-
 @bot.event
 async def on_ready():
     activity = discord.Game(name="Dhoru is Epic | t.help", type=3)
