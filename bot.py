@@ -16,7 +16,7 @@ description = "TourmalineBot - Made by dhoru#7700"
 bot = commands.Bot(command_prefix="t.", description=description, intents=discord.Intents.all())
 bot.remove_command('help')
 
-bot.load_extension("cogs.somecommands")
+bot.load_extension("cogs.maincommands")
 bot.load_extension("cogs.listener")
 bot.load_extension("cogs.ownerCommands")
 bot.load_extension("cogs.helpme")

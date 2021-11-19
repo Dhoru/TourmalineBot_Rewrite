@@ -7,7 +7,7 @@ from catfacts import catfacts
 
 bot = commands.Bot(command_prefix="t.")
 
-class SomeCommands(commands.Cog):
+class MainCommands(commands.Cog):
 	def __init__(self, bot: commands.Bot):
 		self.bot = bot
 
@@ -62,4 +62,4 @@ class SomeCommands(commands.Cog):
 		await ctx.send("https://www.dict.cc/?s={resultthing}")
 
 def setup(bot: commands.bot):
-	bot.add_cog(SomeCommands(bot))
+	bot.add_cog(MainCommands(bot))
