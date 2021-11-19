@@ -7,23 +7,28 @@ class BetaCmd(commands.Cog):
 	def __init__(self, bot: commands.Bot):
 		self.bot = bot
 
-	@commands.command(name="invite", help="Sends the bot invite link")
-	async def invite(self, ctx: commands.Context):
+	@commands.command(name="info", help="Sends the bot info link")
+	async def info(self, ctx: commands.Context):
 		embed=discord.Embed(title='TourmalineBot', description='''
-				**Categories:**
+			__**Bot Info**__
 
-				Do `t.help <category>` for more information on a category.
+			Owner: 
+			<@!473870575081881600> 
 
-				**Categories:**
+			Contributors:
+			<@!158556604155822090>
 
-				`main`
-				`owner` (<@!473870575081881600> only)
-				`listeners`
-				`misc`
+			Github Repository
+			[Dhoru/TourmalineBot_Rewrite](https://github.com/Dhoru/TourmalineBot_Rewrite/)
 
+			Discord Server (GOG):
+			[Link](https://discord.gg/V6z8BmhZyQ)
+
+			Written in:
+			python / [pycord](https://github.com/Pycord-Development/pycord)
 				
-				'''
-				, color=0xff0000)
+			'''
+			, color=0xff0000)
 		embed.set_footer(text="TourmalineBot - Made by dhoru#7700")
 		await ctx.send(embed=embed)
 
