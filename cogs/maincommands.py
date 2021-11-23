@@ -22,18 +22,6 @@ class MainCommands(commands.Cog):
 		
 		await ctx.send(embed=embed)
 
-	@commands.command(name="snipe")
-	async def snipe(self, ctx: commands.Context):
-		if not self.last_msg: 
-			await ctx.send("There is no message to snipe!")
-			return
-
-		author = self.last_msg.author
-		content = self.last_msg.content
-
-		embed = discord.Embed(title=f"Message from {author}", description=content)
-		await ctx.send(embed=embed)
-
 	@commands.command(name='say')
 	async def say(self, ctx: commands.Context, *, args):
 		am = discord.AllowedMentions(
