@@ -44,11 +44,6 @@ class MainCommands(commands.Cog):
 		embed.color = 0xFFFFFF
 		await ctx.send(embed=embed)
 
-	@commands.command(name='entode', help='english to german dictionary')
-	async def entode(self, ctx: commands.Context, args):
-		resultthing = args
-		await ctx.send("https://www.dict.cc/?s={resultthing}")
-
 	@commands.command(name="info", help="Sends the bot info")
 	async def info(self, ctx: commands.Context):
 		embed=discord.Embed(title='TourmalineBot', description='''
