@@ -69,11 +69,5 @@ class MainCommands(commands.Cog):
 		embed.set_footer(text="TourmalineBot - Made by dhoru#7700")
 		await ctx.send(embed=embed)
 
-	@commands.command(name='amime test', help='dont judge me')
-	async def rrtest(self, ctx: commands.Context, args):
-		embed = discord.Embed(title="Running GIF")
-		embed.set_image(url=Estrapy.Sfw.run())
-		await ctx.send(embed=embed)
-
 def setup(bot: commands.bot):
 	bot.add_cog(MainCommands(bot))
