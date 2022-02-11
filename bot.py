@@ -24,12 +24,18 @@ bot.load_extension("cogs.helpme")
 async def on_ready():
     activity = discord.Game(name="Dhoru is Epic | t.help", type=3)
     await bot.change_presence(status=discord.Status.online, activity=activity)
-    print("------")
-    print("Bot is ready!")
-    print('Logged in as')
-    print(bot.user.name)
-    print(bot.user.id)
-    print('------')
+    botUserName = bot.user.name
+    botUserId = bot.user.id
+    initMessage = '''
+    --------
+    Bot is ready!
+    Logged in as:
+    {}
+    {}
+    --------
+    '''
+    initMessage = initMessage.format(botUserName, botUserId)
+    print(initMessage)
 
 bot.run(token)
 
