@@ -7,10 +7,9 @@ class BetaCmd(commands.Cog):
 	def __init__(self, bot: commands.Bot):
 		self.bot = bot
 
-	@commands.command(name='entode', help='english to german dictionary')
-	async def entode(self, ctx: commands.Context, args):
-		resultthing = args
-		await ctx.send("https://www.dict.cc/?s={resultthing}")
+	@commands.command()
+	async def hello(self, ctx: commands.Context):
+		await ctx.send('hi')
 
 def setup(bot: commands.bot):
 	bot.add_cog(BetaCmd(bot))

@@ -69,5 +69,12 @@ class MainCommands(commands.Cog):
 		embed.set_footer(text="TourmalineBot - Made by dhoru#7700")
 		await ctx.send(embed=embed)
 
+	@commands.command(name='dictcc', help='english to german dictionary')
+	async def dictcc(self, ctx: commands.Context, args):
+		resultThing = args
+		link = 'https://www.dict.cc/?s={}'
+		newLink = link.format(resultThing)
+		await ctx.send(newLink)
+
 def setup(bot: commands.bot):
 	bot.add_cog(MainCommands(bot))

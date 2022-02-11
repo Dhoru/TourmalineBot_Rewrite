@@ -73,6 +73,9 @@ class helpme(commands.Cog):
 
 				`t.say`
 					> Make the bot say something
+
+				`t.dictcc`
+					> Search for an word on [dict.cc](https://www.dict.cc)
 				""")
 			embed.set_footer(text="TourmalineBot - Made by dhoru#7700")
 			embed.colour = 0xFF0000
