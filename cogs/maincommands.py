@@ -1,5 +1,4 @@
 import discord
-import wikipedia
 from discord.ext import commands
 import pyquran as q
 import random
@@ -52,7 +51,7 @@ class MainCommands(commands.Cog):
 			Owner: 
 			<@!473870575081881600> 
 
-			Contributors:
+			VERY Helpful Contributor [Current contributions: Renaming a file for me]:
 			<@!158556604155822090>
 
 			Github Repository
