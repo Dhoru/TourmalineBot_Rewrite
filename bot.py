@@ -20,6 +20,7 @@ bot.load_extension("cogs.listener")
 bot.load_extension("cogs.ownerCommands")
 bot.load_extension("cogs.helpMe")
 bot.load_extension("cogs.miscCommands")
+bot.load_extension("cogs.betaCmd")
 
 @bot.event
 async def on_ready():
@@ -39,4 +40,3 @@ async def on_ready():
     print(initMessage)
 
 bot.run(token)
-
