@@ -96,5 +96,3 @@ catfacts = [
 			"There is a show in Iceland called 'Keeping Up With the Kattarshians.' It's a cat reality show that features 4 kittens who live together in fully-furnished 'cat' house, Big Brother-style.",
 			"Researchers say your cat *does* know her name. She just doesn't care.",
 			"The Hungarian word for 'quotation marks' is 'macskaköröm,' which literally translates to 'cat claws.'"]
-
-# I added the list as a seperate file because its too long to add to the main code
