@@ -16,7 +16,6 @@ bot = commands.Bot(command_prefix="t.", description=description, intents=discord
 bot.remove_command('help')
 
 bot.load_extension("cogs.mainCommands")
-bot.load_extension("cogs.listener")
 bot.load_extension("cogs.ownerCommands")
 bot.load_extension("cogs.helpMe")
 bot.load_extension("cogs.miscCommands")
