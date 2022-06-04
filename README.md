@@ -1,6 +1,6 @@
 # TourmalineBot Rewrite
 TourmalineBot but better :)
-by `dhoru#7700` and also `buksmort33#0303`
+by `dhoru#7700` and also `buksmort33#0303` (renamed a file for me)
 
 Written in [**pycord**](https://github.com/Pycord-Development/pycord)
 # Install
@@ -12,6 +12,7 @@ You need to edit the `example.env` file:
 ```sh
 TOKEN=YOUR_TOKEN_HERE #replace your_token_here with your actual discord token
 ```
+
 And also rename it from `example.env` to just `.env`
 
 # License (MIT)

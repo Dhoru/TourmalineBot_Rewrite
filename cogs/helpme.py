@@ -5,7 +5,7 @@ bot = commands.Bot(command_prefix='t.')
 
 bot.remove_command('help')
 
-class helpme(commands.Cog):
+class helpMe(commands.Cog):
 	def __init__(self, bot: commands.Bot):
 		self.bot = bot
 
@@ -34,9 +34,6 @@ class helpme(commands.Cog):
 			embed = discord.Embed(title="Main Commands", description="""
 				`t.help <optional category>`
 					> Shows this
-
-				`t.ayat <surah number> <ayat number>`
-					> Get an ayat from quran
 
 				`t.invite`
 					> Sends bot invite link
@@ -73,6 +70,12 @@ class helpme(commands.Cog):
 
 				`t.say`
 					> Make the bot say something
+
+				`t.dictcc`
+					> Search for an word on [dict.cc](https://www.dict.cc)
+
+				`t.ayat <surah number> <ayat number>`
+					> Get an ayat from quran
 				""")
 			embed.set_footer(text="TourmalineBot - Made by dhoru#7700")
 			embed.colour = 0xFF0000
@@ -95,4 +98,4 @@ class helpme(commands.Cog):
 			await ctx.send(args)
 
 def setup(bot: commands.bot):
-	bot.add_cog(helpme(bot))
+	bot.add_cog(helpMe(bot))

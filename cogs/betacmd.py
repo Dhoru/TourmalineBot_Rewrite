@@ -1,16 +1,18 @@
-import discord
+from discord import slash_command
 from discord.ext import commands
 
-bot = commands.Bot(command_prefix="t.")
 
-class BetaCmd(commands.Cog):
-	def __init__(self, bot: commands.Bot):
+class betaCmd(commands.Cog):
+	def __init__(self, bot):
 		self.bot = bot
 
-	@commands.command(name='entode', help='english to german dictionary')
-	async def entode(self, ctx: commands.Context, args):
-		resultthing = args
-		await ctx.send("https://www.dict.cc/?s={resultthing}")
+	@slash_command(name = 'hello', description = 'hello cmd', guild_ids=[725560468558839851])
+	async def hello(self, ctx):
+		await ctx.respond("Hi, this is a slash command from a cog!")
+
+	@slash_command()
+	async def slashtest(self, ctx):
+		await ctx.respond("response")
 
 def setup(bot: commands.bot):
-	bot.add_cog(BetaCmd(bot))
+	bot.add_cog(betaCmd(bot))

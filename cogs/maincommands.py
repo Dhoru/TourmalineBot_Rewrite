@@ -1,13 +1,10 @@
 import discord
-import wikipedia
 from discord.ext import commands
-import pyquran as q
 import random
-from catfacts import catfacts
 
 bot = commands.Bot(command_prefix="t.")
 
-class MainCommands(commands.Cog):
+class mainCommands(commands.Cog):
 	def __init__(self, bot: commands.Bot):
 		self.bot = bot
 
@@ -22,28 +19,6 @@ class MainCommands(commands.Cog):
 		
 		await ctx.send(embed=embed)
 
-	@commands.command(name='say')
-	async def say(self, ctx: commands.Context, *, args):
-		am = discord.AllowedMentions(
-			users=False,
-			everyone=False,
-			roles=False,
-			replied_user=False,
-			)
-		await ctx.send(args, allowed_mentions=am)
-
-	@commands.command(name='catfact')
-	async def catfact(self, ctx: commands.Context):
-		await ctx.send(random.choice(catfacts))
-
-	@commands.command(name='ayat', help='get an ayat')
-	async def ayat(self, ctx: commands.Context, sn: int, an: int):
-		indexayat = "{sn}:{an}"
-		embed=discord.Embed(title=q.quran.get_sura_name(sn), description=q.quran.get_verse(sura_number=sn, verse_number=an, with_tashkeel=True))
-		embed.set_footer(text=indexayat.format(sn=sn, an=an))
-		embed.color = 0xFFFFFF
-		await ctx.send(embed=embed)
-
 	@commands.command(name="info", help="Sends the bot info")
 	async def info(self, ctx: commands.Context):
 		embed=discord.Embed(title='TourmalineBot', description='''
@@ -52,7 +27,7 @@ class MainCommands(commands.Cog):
 			Owner: 
 			<@!473870575081881600> 
 
-			Contributors:
+			VERY Helpful Contributor [Current contributions: Renaming a file for me]:
 			<@!158556604155822090>
 
 			Github Repository
@@ -70,4 +45,4 @@ class MainCommands(commands.Cog):
 		await ctx.send(embed=embed)
 
 def setup(bot: commands.bot):
-	bot.add_cog(MainCommands(bot))
+	bot.add_cog(mainCommands(bot))
