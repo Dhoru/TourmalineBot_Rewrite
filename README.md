@@ -4,7 +4,7 @@
 TourmalineBot but better :)
 by `dhoru#7700` and also `buksmort33#0303` (renamed a file for me)
 
-Written in [**pycord**](https://github.com/Pycord-Development/pycord)
+Written in **discord.py**
 # Install
 ```git
 git clone https://github.com/Dhoru/TourmalineBot_Rewrite
