@@ -1,3 +1,5 @@
+# THIS CODE IS OBSOLETE AND WILL NOT RUN ANYMORE, DUE TO A LOT OF UPDATES SINCE IT WAS LAST WRITTEN. thank you
+
 # TourmalineBot Rewrite
 TourmalineBot but better :)
 by `dhoru#7700` and also `buksmort33#0303` (renamed a file for me)
